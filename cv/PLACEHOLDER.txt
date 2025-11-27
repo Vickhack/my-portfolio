@@ -1,0 +1,9 @@
+This folder holds the CV/Resume file for the portfolio site.
+
+Instructions:
+1) Replace this file with your actual PDF named exactly: Victor-Apochi-CV.pdf
+   (or update the link in index.html to match your filename).
+2) Place the PDF at: cv/Victor-Apochi-CV.pdf
+3) The buttons in the Resume / CV section will then allow visitors to download or open the PDF.
+
+Tip: Optimize the PDF size (under ~1-2MB) for faster downloads.

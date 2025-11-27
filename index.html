@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#">Victor</a>
+			<nav class="nav" id="nav">
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="container hero-inner">
+				<div class="hero-content">
+					<h1>Hello — I'm <span class="accent">Victor Apochi</span></h1>
+					<p class="lead">A front-end developer who builds accessible, responsive web experiences, using HTML, CSS, and JavaScript.</p>
+					<p><a class="btn" href="#projects">See my work</a></p>
+				</div>
+				<div class="hero-photo" aria-hidden="false">
+					<!-- Replace this SVG with your photo: img/profile.jpg or profile.png -->
+					<img src="img/profile.jpg.jpg" alt="Victor Apochi portrait">
+				</div>
+			</div>
+		</section>
+
+		<section class="cv container" id="cv">
+			<h2>Resume / CV</h2>
+			<p>Download my CV to see my full work history and contact details.</p>
+			<p>
+				<a class="btn" href="cv/Apochi Victor James CV (1).pdf" download>Download CV (PDF)</a>
+				<a class="btn" href="cv/Apochi Victor James CV (1).pdf" target="_blank" rel="noopener">Open PDF</a>
+			</p>
+			<p class="muted">Don't forget to replace <code>cv/Victor-Apochi-CV.pdf</code> with your actual PDF file.</p>
+		</section>
+
+		<section class="about container" id="about">
+			<h2>About</h2>
+			<p>I build websites and and create a responsive web pages. I’m a developer and problem-solver with a strong interest in building practical, user-focused technology solutions. I enjoy working with modern AI tools, automation systems, and developer-focused technologies that streamline workflows and improve productivity. I’m passionate about creating open-source projects—especially AI agents, developer tools, and efficient backend systems—and I’m always looking for opportunities to collaborate on innovative projects that make real impact.</p>
+		</section>
+
+		<section class="projects container" id="projects">
+			<h2>Projects</h2>
+			<div class="grid">
+				<article class="card">
+					<div class="thumb"><img src="img/Screenshot 2025-11-24 155716.png" alt="Project One"></div>
+					<h3>Project One</h3>
+					<p>An Ecommerce website.
+           <a href="https://vickthor-ecommerce.vercel.app/" target="blank"><span>link</span></a>  
+</p>
+				</article>
+				<article class="card">
+					<div class="thumb"><img src="img/Screenshot 2025-11-25 163040.png" alt="Project Two"></div>
+					<h3>Project Two</h3>
+					<p>A pizza website. Add links or images.</p>
+				</article>
+				<article class="card">
+					<div class="thumb"><img src="img/project3.svg" alt="Project Three"></div>
+					<h3>Project Three</h3>
+					<p>Short description of the project. Add links or images.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="skills container" id="skills">
+			<h2>Skills</h2>
+			<ul class="skills-list">
+				<li>HTML</li>
+				<li>CSS / SCSS</li>
+				<li>JavaScript</li>
+				<li>Git</li>
+				<li>Github</li>
+			</ul>
+		</section>
+
+		<section class="contact container" id="contact">
+			<h2>Contact</h2>
+			<p>Want to work together? Send a message or reach out via:</p>
+			<div class="contact-methods">
+				<a href="tel:+2349066875069" class="contact-link">📞 Call</a>
+				<a href="https://wa.me/2349066875069" class="contact-link" target="_blank" rel="noopener">💬 WhatsApp</a>
+			</div>
+			<div class="social-links">
+				<h3>Follow Me</h3>
+				<a href="https://github.com/Vickhack" class="social-icon" title="GitHub" target="_blank" rel="noopener">GitHub</a>
+				<a href="https://x.com/vickyjay299?t=9cyXpchE-LJRY7NjPQJVhw&s=09" class="social-icon" title="Twitter" target="_blank" rel="noopener">X</a>
+				<a href="https://www.linkedin.com/in/apochi-victor-7b866a225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon" title="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+				<a href="https://www.instagram.com/vicktoorr_?igsh=MWQzM3A1MTd2N3FpYw==" class="social-icon" title="Instagram" target="_blank" rel="noopener">Instagram</a>
+			</div>
+			<form id="contact-form" class="contact-form" action="https://formspree.io/f/xblepdqq" method="POST" novalidate>
+				<label>
+					<span>Name</span>
+					<input type="text" name="name" id="name" required>
+				</label>
+				<label>
+					<span>Email</span>
+					<input type="email" name="email" id="email" required>
+				</label>
+				<label>
+					<span>Message</span>
+					<textarea name="message" id="message" rows="5" required></textarea>
+				</label>
+				<!-- Honeypot field (hidden from users) to prevent spam -->
+				<input type="hidden" name="_honeypot" value="">
+				<button type="submit" class="btn">Send</button>
+				<p id="form-msg" class="form-msg" aria-live="polite"></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Apochi Victor — Built with HTML, CSS & JavaScript</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
